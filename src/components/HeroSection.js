@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SocialMediaIconsReact } from 'social-media-icons-react';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import PText from './PText';
@@ -81,12 +82,10 @@ const HeroStyles = styled.div`
     ul {
       li {
         margin-bottom: 1rem;
-        a {
+        .social__logos {
           display: inline-block;
-          font-size: 1.6rem;
-          transform: rotate(-90deg);
           letter-spacing: 5px;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
         }
       }
     }
@@ -124,10 +123,7 @@ const HeroStyles = styled.div`
       .hero__social__text {
         ul {
           li {
-            a {
-              font-size: 1.2rem;
-              margin-bottom: 1rem;
-            }
+            margin-bottom: 0.25rem;
           }
         }
       }
@@ -172,31 +168,32 @@ export default function HeroSection() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a
-                    href="https://www.github.com/JvoProgramming"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GH
-                  </a>
+                  <SocialMediaIconsReact
+                    className="social__logos"
+                    icon="github"
+                    url="https://www.github.com/JvoProgramming"
+                    borderColor="rgba(0,0,0,0.25)"
+                    iconColor="rgba(255,255,255,1)"
+                    backgroundColor="rgba(90,90,90,1)"
+                  />
                 </li>
                 <li>
-                  <a
-                    href="https://www.linkedin.com/in/johnny-vo-063aa81a2/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LI
-                  </a>
+                  <SocialMediaIconsReact
+                    className="social__logos"
+                    icon="linkedin"
+                    url="https://www.linkedin.com/in/johnny-vo-063aa81a2/"
+                    borderColor="rgba(0,0,0,0.25)"
+                    backgroundColor="rgba(90,90,90,1)"
+                  />
                 </li>
                 <li>
-                  <a
-                    href="https://www.instagram.com/vogasm/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
-                  </a>
+                  <SocialMediaIconsReact
+                    className="social__logos"
+                    icon="instagram"
+                    url="https://www.instagram.com/vogasm"
+                    borderColor="rgba(0,0,0,0.25)"
+                    backgroundColor="rgba(90,90,90,1)"
+                  />
                 </li>
               </ul>
             </div>
