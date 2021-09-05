@@ -153,10 +153,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              I am a fresh college graduate who continues to expand upon my
-              versatility and skills in programming. I love to design, create,
-              and collaborate on building new applications for people to
-              experience
+              Your favorite programmer. Versatile, sharp, and adaptive.{' '}
             </PText>
             <Button btnLink="/projects" btnText="See my works" />
           </div>
