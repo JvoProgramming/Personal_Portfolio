@@ -48,7 +48,7 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
     width: 50px;
   }
   .hero__social {
@@ -109,7 +109,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: -15%;
+      bottom: -5%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -131,6 +131,7 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
+      bottom: -2.5%;
       gap: 1rem;
       p {
         font-size: 1.3rem;
