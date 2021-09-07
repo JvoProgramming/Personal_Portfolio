@@ -154,7 +154,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Your favorite programmer. Versatile, sharp, and adaptive.{' '}
+              Your favorite developer. Versatile, sharp, and adaptive.{' '}
             </PText>
             <Button btnLink="/projects" btnText="See my works" />
           </div>
