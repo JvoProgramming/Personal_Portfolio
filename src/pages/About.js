@@ -84,8 +84,8 @@ export default function About() {
             <h2 className="about__heading">An Aspiring Developer</h2>
             <div className="about__info">
               <PText>
-                I am from the Inland Empire, a metropolitan area and region in
-                Southern California. I have been interacting with computers
+                I grew up in the Inland Empire, a metropolitan area and region
+                in Southern California. I have been interacting with computers
                 since I was four years old. I've always loved technology and
                 kept a keen eye on the technological growth throughout my life.
                 It is amazing to see how creative technology can be whilst being

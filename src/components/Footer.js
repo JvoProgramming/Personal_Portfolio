@@ -84,8 +84,8 @@ export default function Footer() {
                 path: 'tel:9094181894',
               },
               {
-                title: 'jvoprogramming@gmail.com',
-                path: 'mailto:jvoprogramming@gmail.com',
+                title: 'JvoProgramming@gmail.com',
+                path: 'mailto:JvoProgramming@gmail.com',
               },
             ]}
           />
