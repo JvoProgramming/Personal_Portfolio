@@ -6,27 +6,30 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Project from './pages/Projects';
 import Footer from './components/Footer';
+import SmoothScrollbar from './components/SmoothScrollbar';
 
 export default function App() {
   return (
     <>
       <Router>
         <NavMenu />
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Project />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <Footer />
+        <SmoothScrollbar>
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/projects">
+              <Project />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+          <Footer />
+        </SmoothScrollbar>
       </Router>
     </>
   );
