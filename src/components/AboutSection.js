@@ -42,7 +42,7 @@ const AboutSectionStyle = styled.div`
   @media only screen and (max-width: 768px) {
     .container {
       flex-direction: column;
-      text-align: left;
+      text-align: center;
     }
     .aboutSection__left,
     .aboutSection__right {

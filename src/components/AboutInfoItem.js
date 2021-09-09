@@ -22,7 +22,7 @@ const AboutItemStyles = styled.div`
     padding: 1rem;
     border-radius: 8px;
   }
-  @media only screen and (max-width: 768) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
