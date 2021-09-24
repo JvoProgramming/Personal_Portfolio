@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
+import emailjs from 'emailjs-com';
 
-const FormStyles = styled.div`
+const FormStyles = styled.form`
   width: 100%;
   .form-group {
     width: 100%;
@@ -40,12 +41,33 @@ const FormStyles = styled.div`
 `;
 
 export default function ContactForm() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_2fzp8bv',
+        form.current,
+        'user_dBDKqa2UHm7e4rtgih4Kh'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   return (
     <div>
-      <FormStyles>
+      <FormStyles ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">
             Your Name
@@ -65,6 +87,7 @@ export default function ContactForm() {
               type="text"
               id="email"
               email="email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -77,6 +100,7 @@ export default function ContactForm() {
               type="text"
               id="message"
               message="message"
+              name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
