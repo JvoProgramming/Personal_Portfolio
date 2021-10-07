@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import HoverVideoPlayer from 'react-hover-video-player';
 
@@ -57,9 +56,9 @@ export default function ProjectItem({
         />
       </a>
       <div className="projectItem__info">
-        <Link to="#">
+        <a href={link}>
           <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        </a>
         <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyle>

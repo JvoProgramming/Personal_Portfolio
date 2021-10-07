@@ -44,7 +44,7 @@ const projects = [
       'A web application where users can view a database for movies. If you need information about a movie, this is the perfect website for you.',
     img: CinemaBaseImg,
     vid: '',
-    link: '',
+    link: 'https://github.com/JvoProgramming/CinemaBase',
   },
   {
     id: uuidv4(),
@@ -53,7 +53,7 @@ const projects = [
       'Wired is a simple way to communicate with your friends, family, or co-workers via voice, video, and text. Create groups or communities where you can talk, chat, or discuss.',
     img: WiredImg,
     vid: '',
-    link: '',
+    link: 'https://github.com/JvoProgramming/Wired',
   },
 ];
 
