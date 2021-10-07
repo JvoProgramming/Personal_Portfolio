@@ -15,6 +15,7 @@ const ItemStyles = styled.div`
     color: var(--white);
     background-color: var(--gray-2);
     padding: 1.3rem;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -26,7 +27,7 @@ const ItemStyles = styled.div`
 
 export default function ContactInfoItem({
   icon = <MdPlace />,
-  text = 'This is info',
+  text = 'I need text ',
 }) {
   return (
     <ItemStyles>

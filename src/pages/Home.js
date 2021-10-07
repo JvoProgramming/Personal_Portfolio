@@ -1,16 +1,16 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
-import ServiceSection from '../components/ServiceSection';
+import ServicesSection from '../components/ServicesSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactBanner from '../components/ContactBanner';
+import HeroSection from '../components/HeroSection';
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
       <AboutSection />
-      <ServiceSection />
+      <ServicesSection />
       <ProjectsSection />
       <ContactBanner />
     </div>

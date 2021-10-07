@@ -6,8 +6,9 @@ const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 3rem;
   position: relative;
+  /* gap: 5rem; */
+  margin-top: 3rem;
   .title {
     font-size: 2.4rem;
   }
@@ -38,7 +39,7 @@ const AboutItemStyles = styled.div`
 
 export default function AboutInfoItem({
   title = 'This is the item title',
-  items = ['Language1', 'Language2', 'Language3'],
+  items = ['Language1', 'Language2'],
 }) {
   return (
     <AboutItemStyles>

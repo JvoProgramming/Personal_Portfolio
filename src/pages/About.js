@@ -74,74 +74,74 @@ const AboutPageStyles = styled.div`
 
 export default function About() {
   return (
-    <AboutPageStyles>
-      <div className="container">
-        <div className="top-section">
-          <div className="left">
-            <p className="about__subheading">
-              Hi, I am <span>Johnny Vo</span>
-            </p>
-            <h2 className="about__heading">An Aspiring Developer</h2>
-            <div className="about__info">
-              <PText>
-                I grew up in the Inland Empire, a metropolitan area and region
-                in Southern California. I have been interacting with computers
-                since I was four years old. I've always loved technology and
-                kept a keen eye on the technological growth throughout my life.
-                It is amazing to see how creative technology can be whilst being
-                one of the most useful things the world utilizes.
-                <br />
-                <br />
-                My coding journey started when my highschool opened its first
-                ever robotics course during my senior year. This was an
-                opportunity for me to delve into the world of programming and
-                computer science. Since then, I continued to look forward on my
-                journey as a developer and earned my Bachelor of Science in
-                Computer Science.
-                <br />
-                <br />
-                My vision is to develop innovative technologies that can drive
-                the world to another level. As technology is progressing better
-                than ever, it is time for us to create useful, helpful, and
-                ethical products that the world can use. Let's strive together
-                to make this happen!
-                <br />
-                <br />
-              </PText>
+    <>
+      <AboutPageStyles>
+        <div className="container">
+          <div className="top-section">
+            <div className="left">
+              <p className="about__subheading">
+                Hi, I am <span>Johnny Vo</span>
+              </p>
+              <h2 className="about__heading">A freelance Web developer</h2>
+              <div className="about__info">
+                <PText>
+                  I grew up in the Inland Empire, a metropolitan area and region
+                  in Southern California. I have been interacting with computers
+                  since I was four years old. I've always loved technology and
+                  kept a keen eye on the technological growth throughout my
+                  life. It is amazing to see how creative technology can be
+                  whilst being one of the most useful things the world utilizes.
+                  <br />
+                  <br />
+                  My coding journey started when my highschool opened its first
+                  ever robotics course during my senior year. This was an
+                  opportunity for me to delve into the world of programming and
+                  computer science. Since then, I continued to look forward on
+                  my journey as a developer and earned my Bachelor of Science in
+                  Computer Science.
+                  <br />
+                  <br />
+                  My vision is to develop innovative technologies that can drive
+                  the world to another level. As technology is progressing
+                  better than ever, it is time for us to create useful, helpful,
+                  and ethical products that the world can use. Let's strive
+                  together to make this happen!
+                </PText>
+              </div>
+              <Button btnText="My Resume" btnLink="#" />
             </div>
-            <Button btnText="My Resume" btnLink="#" />
+            <div className="right">
+              <img src={AboutImg} alt="Johnny Vo img" />
+            </div>
           </div>
-          <div className="right">
-            <img src={AboutImg} alt="Johnny Vo img" />
+          <div className="about__info__items">
+            <div className="about__info__item">
+              <h1 className="about__info__heading">Education</h1>
+              <AboutInfoItem
+                title="School"
+                items={['University of California, Riverside']}
+              />
+              <AboutInfoItem title="Major" items={['Computer Science']} />
+            </div>
+            <div className="about__info__item">
+              <h1 className="about__info__heading">Skills</h1>
+              <AboutInfoItem
+                title="Languages"
+                items={['C++', 'Python', 'Java']}
+              />
+              <AboutInfoItem
+                title="Front-End"
+                items={['HTML', 'CSS', 'JavaScript', 'React']}
+              />
+              <AboutInfoItem
+                title="Back-End"
+                items={['NodeJS', 'ExpressJS', 'MongoDB', 'SQL']}
+              />
+            </div>
           </div>
         </div>
-        <div className="about__info__items">
-          <div className="about__info__item">
-            <h1 className="about__info__heading">Education</h1>
-            <AboutInfoItem
-              title="School"
-              items={['University of California, Riverside']}
-            />
-            <AboutInfoItem title="Major" items={['Computer Science']} />
-          </div>
-          <div className="about__info__item">
-            <h1 className="about__info__heading">Skills</h1>
-            <AboutInfoItem
-              title="Languages"
-              items={['C++', 'Python', 'Java']}
-            />
-            <AboutInfoItem
-              title="Front-End"
-              items={['HTML', 'CSS', 'Javascript', 'React']}
-            />
-            <AboutInfoItem
-              title="Back-End"
-              items={['NodeJS', 'ExpressJS', 'MongoDB']}
-            />
-          </div>
-        </div>
-      </div>
-      <ContactBanner />
-    </AboutPageStyles>
+        <ContactBanner />
+      </AboutPageStyles>
+    </>
   );
 }

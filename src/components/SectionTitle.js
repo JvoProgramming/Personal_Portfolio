@@ -14,6 +14,7 @@ const SectionTitleStyle = styled.div`
     text-transform: uppercase;
   }
   @media only screen and (max-width: 768px) {
+    text-align: center;
     p {
       font-size: 1.2rem;
     }

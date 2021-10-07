@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import projectImg from '../assets/images/projectImg.png';
+import HoverVideoPlayer from 'react-hover-video-player';
 
 const ProjectItemStyle = styled.div`
   .projectItem__img {
     width: 100%;
     height: 400px;
-    overflow: hidden;
     border-radius: 12px;
+    overflow: hidden;
     display: inline-block;
     border: 3px solid var(--gray-2);
     img {
@@ -37,15 +37,25 @@ const ProjectItemStyle = styled.div`
 `;
 
 export default function ProjectItem({
-  img = projectImg,
+  img = '',
   title = 'Project Name',
   desc = 'This is an application that I have been working on',
+  link = '',
+  vid = '',
+  vidVolume = '.25',
 }) {
   return (
     <ProjectItemStyle>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="project pic" />
-      </Link>
+      <a href={link}>
+        <HoverVideoPlayer
+          className="projectItem__img"
+          videoSrc={vid}
+          pausedOverlay={<img src={img} alt="project img" />}
+          muted={false}
+          volume={vidVolume}
+          sizingMode="container"
+        />
+      </a>
       <div className="projectItem__info">
         <Link to="#">
           <h3 className="projectItem__title">{title}</h3>

@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SocialMediaIconsReact } from 'social-media-icons-react';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
-import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
@@ -48,7 +47,8 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 100px;
+
+    bottom: 20px;
     width: 50px;
   }
   .hero__social {
@@ -57,6 +57,7 @@ const HeroStyles = styled.div`
   .hero__scrollDown {
     right: 50px;
   }
+
   .hero__social__indicator,
   .hero__scrollDown {
     width: 50px;
@@ -78,18 +79,22 @@ const HeroStyles = styled.div`
       max-height: 70px;
     }
   }
+
   .hero__social__text {
     ul {
       li {
         margin-bottom: 1rem;
-        .social__logos {
+        a {
           display: inline-block;
+          font-size: 1.6rem;
+          transform: rotate(-90deg);
           letter-spacing: 5px;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
       }
     }
   }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -109,7 +114,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: -5%;
+      bottom: -15%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -123,7 +128,10 @@ const HeroStyles = styled.div`
       .hero__social__text {
         ul {
           li {
-            margin-bottom: 0.25rem;
+            a {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
           }
         }
       }
@@ -131,7 +139,6 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
-      bottom: -2.5%;
       gap: 1rem;
       p {
         font-size: 1.3rem;
@@ -154,51 +161,50 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Your favorite developer. Versatile, sharp, and adaptive.{' '}
+              Your favorite developer. Versatile, sharp, and adaptive.
             </PText>
-            <Button btnLink="/projects" btnText="See my works" />
+            <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
               <p>Follow</p>
-              <img src={SocialMediaArrow} alt="social media arrow" />
+              <img src={SocialMediaArrow} alt="icon" />
             </div>
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <SocialMediaIconsReact
-                    className="social__logos"
-                    icon="github"
-                    url="https://www.github.com/JvoProgramming"
-                    borderColor="rgba(0,0,0,0.25)"
-                    iconColor="rgba(255,255,255,1)"
-                    backgroundColor="rgba(90,90,90,1)"
-                  />
+                  <a
+                    href="http://github.com/JvoProgramming"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GH
+                  </a>
                 </li>
                 <li>
-                  <SocialMediaIconsReact
-                    className="social__logos"
-                    icon="linkedin"
-                    url="https://www.linkedin.com/in/johnny-vo-063aa81a2/"
-                    borderColor="rgba(0,0,0,0.25)"
-                    backgroundColor="rgba(90,90,90,1)"
-                  />
+                  <a
+                    href="https://www.linkedin.com/in/johnny-vo-063aa81a2/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LI
+                  </a>
                 </li>
                 <li>
-                  <SocialMediaIconsReact
-                    className="social__logos"
-                    icon="instagram"
-                    url="https://www.instagram.com/vogasm"
-                    borderColor="rgba(0,0,0,0.25)"
-                    backgroundColor="rgba(90,90,90,1)"
-                  />
+                  <a
+                    href="http://isntagram.com/vogasm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    IG
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="scroll down arrow" />
+            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>
         </div>
       </div>

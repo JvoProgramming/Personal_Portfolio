@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
-const NavMenuStyles = styled.div`
+const NavStyles = styled.nav`
   position: fixed;
   z-index: 100;
   top: 0;
@@ -44,8 +44,11 @@ const NavMenuStyles = styled.div`
     cursor: pointer;
     display: none;
     outline: none;
+    * {
+      pointer-events: none;
+    }
   }
-  .closeNavIcon {
+  .navItems .closeNavIcon {
     display: none;
   }
   @media only screen and (max-width: 768px) {
@@ -85,24 +88,25 @@ const NavMenuStyles = styled.div`
 `;
 
 export default function NavMenu() {
-  const [showNav, SetShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   return (
-    <NavMenuStyles>
+    <NavStyles>
       <div
         className="mobile-menu-icon"
-        onClick={() => SetShowNav(!showNav)}
+        onClick={() => setShowNav(!showNav)}
         role="button"
-        onKeyDown={() => SetShowNav(!showNav)}
+        onKeyDown={() => setShowNav(!showNav)}
         tabIndex={0}
       >
         <MdMenu />
       </div>
+
       <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
           className="closeNavIcon"
-          onClick={() => SetShowNav(!showNav)}
+          onClick={() => setShowNav(!showNav)}
           role="button"
-          onKeyDown={() => SetShowNav(!showNav)}
+          onKeyDown={() => setShowNav(!showNav)}
           tabIndex={0}
         >
           <MdClose />
@@ -111,9 +115,9 @@ export default function NavMenu() {
           <NavLink
             to="/"
             exact
-            onClick={() => SetShowNav(!showNav)}
+            onClick={() => setShowNav(!showNav)}
             role="button"
-            onKeyDown={() => SetShowNav(!showNav)}
+            onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Home
@@ -122,9 +126,9 @@ export default function NavMenu() {
         <li>
           <NavLink
             to="/about"
-            onClick={() => SetShowNav(!showNav)}
+            onClick={() => setShowNav(!showNav)}
             role="button"
-            onKeyDown={() => SetShowNav(!showNav)}
+            onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             About
@@ -133,9 +137,9 @@ export default function NavMenu() {
         <li>
           <NavLink
             to="/projects"
-            onClick={() => SetShowNav(!showNav)}
+            onClick={() => setShowNav(!showNav)}
             role="button"
-            onKeyDown={() => SetShowNav(!showNav)}
+            onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Projects
@@ -144,15 +148,15 @@ export default function NavMenu() {
         <li>
           <NavLink
             to="/contact"
-            onClick={() => SetShowNav(!showNav)}
+            onClick={() => setShowNav(!showNav)}
             role="button"
-            onKeyDown={() => SetShowNav(!showNav)}
+            onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Contact
           </NavLink>
         </li>
       </ul>
-    </NavMenuStyles>
+    </NavStyles>
   );
 }

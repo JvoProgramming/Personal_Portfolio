@@ -5,7 +5,7 @@ import PText from './PText';
 import Button from './Button';
 import AboutImg from '../assets/images/about-sec-img.png';
 
-const AboutSectionStyle = styled.div`
+const AboutSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
     display: flex;
@@ -60,7 +60,7 @@ const AboutSectionStyle = styled.div`
     }
     .aboutSection__buttons {
       flex-direction: column;
-      gap: 0;
+      gap: 0rem;
       .button-wrapper,
       a {
         width: 100%;
@@ -72,7 +72,7 @@ const AboutSectionStyle = styled.div`
 
 export default function AboutSection() {
   return (
-    <AboutSectionStyle>
+    <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle
@@ -80,19 +80,19 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am an aspiring developer who continues to expand upon my
-            versatility and skills in programming. I love to design, create, and
-            collaborate on building new applications for people to experience
+            I am an aspiring developer who strives to expand upon my versatility
+            and skills in programming. I love to design, create, and collaborate
+            on building new applications for people to experience
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnLink="/projects" btnText="Works" />
-            <Button btnLink="/about" btnText="Read More" outline />
+            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>
         <div className="aboutSection__right">
-          <img src={AboutImg} alt="" />
+          <img className="aboutImg" src={AboutImg} alt="Img" />
         </div>
       </div>
-    </AboutSectionStyle>
+    </AboutSectionStyles>
   );
 }

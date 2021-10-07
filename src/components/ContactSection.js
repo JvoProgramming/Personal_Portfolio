@@ -1,6 +1,6 @@
 import React from 'react';
-import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import styled from 'styled-components';
+import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
@@ -34,14 +34,12 @@ const ContactSectionStyle = styled.div`
     border-radius: 12px;
     /* padding-left: 3rem; */
   }
-  @media only screen and (max-width: 900px) {
-    .contactSection__wrapper::after {
-      display: none;
-    }
-  }
   @media only screen and (max-width: 768px) {
     .contactSection__wrapper {
       flex-direction: column;
+    }
+    .contactSection__wrapper::after {
+      display: none;
     }
     .left,
     .right {
@@ -57,7 +55,7 @@ export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className="container">
-        <SectionTitle heading="Contact" subheading="Get in touch" />
+        <SectionTitle heading="contact" subheading="Get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
             <ContactInfoItem icon={<MdLocalPhone />} text="(909)418-1894" />
