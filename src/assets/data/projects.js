@@ -57,7 +57,7 @@ const projects = [
       'ChatRoom is web application where users can create rooms and chat amongst themselves. Try it out and have a chat with your friends.',
     img: ChatRoomImg,
     vid: ChatRoomVid,
-    link: 'https://github.com/JvoProgramming/ChatRoom',
+    link: 'https://jvoprogramming-chat-room.herokuapp.com/',
     vidVolume: '.6',
   },
   {
