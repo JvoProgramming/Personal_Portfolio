@@ -7,6 +7,10 @@ import WiredImg from '../images/WiredImg.jpg';
 import LastWarVid from '../videos/TheLastWar.mp4';
 import LingualityVid from '../videos/Linguality.mkv';
 import PhotoITVid from '../videos/photoIT.mp4';
+import ChatRoomImg from '../images/ChatRoomImg.jpeg';
+import ChatRoomVid from '../videos/ChatRoom.mp4';
+import QueryGadgetImg from '../images/QueryGadgetImg.jpeg';
+import QueryGadgetVid from '../videos/QueryGadget.mp4';
 
 const projects = [
   {
@@ -36,6 +40,25 @@ const projects = [
     vid: LastWarVid,
     link: 'https://github.com/JvoProgramming/The-Last-War',
     vidVolume: '.15',
+  },
+  {
+    id: uuidv4(),
+    name: 'QueryGadget',
+    desc:
+      'QueryGadget is a 2-in-1 web crawler and search engine. The python script crawls through various pages and uploads them to a database. Users can query this database through the web interface to fetch relevant documents',
+    img: QueryGadgetImg,
+    vid: QueryGadgetVid,
+    link: 'https://github.com/JvoProgramming/QueryGadget',
+  },
+  {
+    id: uuidv4(),
+    name: 'ChatRoom',
+    desc:
+      'ChatRoom is web application where users can create rooms and chat amongst themselves. Try it out and have a chat with your friends.',
+    img: ChatRoomImg,
+    vid: ChatRoomVid,
+    link: 'https://github.com/JvoProgramming/ChatRoom',
+    vidVolume: '.6',
   },
   {
     id: uuidv4(),
