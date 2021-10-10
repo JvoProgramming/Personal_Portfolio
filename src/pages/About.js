@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../components/Button';
 import PText from '../components/PText';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import ButtonA from '../components/ButtonA';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -82,7 +82,7 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Johnny Vo</span>
               </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h2 className="about__heading">An Aspiring Web Developer</h2>
               <div className="about__info">
                 <PText>
                   I grew up in the Inland Empire, a metropolitan area and region
@@ -108,7 +108,10 @@ export default function About() {
                   together to make this happen!
                 </PText>
               </div>
-              <Button btnText="My Resume" btnLink="#" />
+              <ButtonA
+                btnText="My Resume"
+                btnLink="https://s3.amazonaws.com/attachments.angel.co/6281107-cd26cf4ed4f7d3037785010794f85279.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJS6W3HGZGRJIRBTA%2F20211010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211010T195510Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e2c66f76b97557f5109d17d2fa384c188e820cd1055337c055126138d1945e7a"
+              />
             </div>
             <div className="right">
               <img src={AboutImg} alt="Johnny Vo img" />
