@@ -41,6 +41,10 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next::after {
     font-size: 2rem;
   }
+  .hover-msg {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
   @media only screen and (max-width: 768px) {
     .projects__allItems {
       flex-direction: column;
@@ -63,6 +67,7 @@ export default function ProjectsSection() {
           heading="Projects"
           subheading="a few of my recent works"
         />
+        <p className="hover-msg">(hover over project logos to preview)</p>
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
@@ -89,8 +94,11 @@ export default function ProjectsSection() {
                 <SwiperSlide key={project.id}>
                   <ProjectItem
                     title={project.name}
-                    img={project.img}
                     desc={project.desc}
+                    img={project.img}
+                    vid={project.vid}
+                    link={project.link}
+                    vidVolume={project.vidVolume}
                   />
                 </SwiperSlide>
               );
