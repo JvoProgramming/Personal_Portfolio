@@ -34,7 +34,7 @@ export default function ServicesSection() {
         <div className="services__allItems">
           <ServicesSectionItem
             icon={<MdDesktopMac />}
-            title=""
+            title="Web Developer"
             desc="Developing websites is another skill I possess. I can design unique UI/UX for a beautiful and responsive front-end experience. I can also build a back-end to handle server-side scripting and functionalities."
           />
           <ServicesSectionItem
