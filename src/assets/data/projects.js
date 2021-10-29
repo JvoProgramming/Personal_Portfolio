@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'CinemaBase - IN PROGRESS',
+    name: 'CinemaBase',
     desc:
       'A web application where users can view a database for movies. If you need information about a movie, this is the perfect website for you.',
     img: CinemaBaseImg,
