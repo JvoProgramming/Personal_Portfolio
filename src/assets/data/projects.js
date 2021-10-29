@@ -2,7 +2,8 @@ import { v4 as uuidv4 } from 'uuid';
 import LingualityImg from '../images/LingualityImg.jpeg';
 import PhotoITImg from '../images/PhotoITImg.png';
 import LastWarImg from '../images/TheLastWarImg.jpeg';
-import CinemaBaseImg from '../images/CinemaBaseImg.jpg';
+import CinemaBaseImg from '../images/CinemaBaseImg.jpeg';
+import CinemaBaseVid from '../videos/CinemaBase.mp4';
 import WiredImg from '../images/WiredImg.jpg';
 import LastWarVid from '../videos/TheLastWar.mp4';
 import LingualityVid from '../videos/Linguality.mkv';
@@ -24,31 +25,21 @@ const projects = [
   },
   {
     id: uuidv4(),
+    name: 'CinemaBase - IN PROGRESS',
+    desc:
+      'A web application where users can view a database for movies. If you need information about a movie, this is the perfect website for you.',
+    img: CinemaBaseImg,
+    vid: CinemaBaseVid,
+    link: 'https://cinemabase.netlify.app/',
+  },
+  {
+    id: uuidv4(),
     name: 'Linguality',
     desc:
       'A translation application utilizing machine learning tools that help English speakers communicate in a foreign language. Have a chat in a different language now!',
     img: LingualityImg,
     vid: LingualityVid,
     link: 'https://github.com/JvoProgramming/Linguality',
-  },
-  {
-    id: uuidv4(),
-    name: 'The Last War',
-    desc:
-      'A single-player zombie survival game. Try to survive as long as you can!',
-    img: LastWarImg,
-    vid: LastWarVid,
-    link: 'https://github.com/JvoProgramming/The-Last-War',
-    vidVolume: '.15',
-  },
-  {
-    id: uuidv4(),
-    name: 'QueryGadget',
-    desc:
-      'QueryGadget is a 2-in-1 web crawler and search engine. The python script crawls through various pages and uploads them to a database. Users can query this database through the web interface to fetch relevant documents',
-    img: QueryGadgetImg,
-    vid: QueryGadgetVid,
-    link: 'https://github.com/JvoProgramming/QueryGadget',
   },
   {
     id: uuidv4(),
@@ -62,12 +53,22 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'CinemaBase - IN PROGRESS',
+    name: 'QueryGadget',
     desc:
-      'A web application where users can view a database for movies. If you need information about a movie, this is the perfect website for you.',
-    img: CinemaBaseImg,
-    vid: '',
-    link: 'https://github.com/JvoProgramming/CinemaBase',
+      'QueryGadget is a 2-in-1 web crawler and search engine. The python script crawls through various pages and uploads them to a database. Users can query this database through the web interface to fetch relevant documents',
+    img: QueryGadgetImg,
+    vid: QueryGadgetVid,
+    link: 'https://github.com/JvoProgramming/QueryGadget',
+  },
+  {
+    id: uuidv4(),
+    name: 'The Last War',
+    desc:
+      'A single-player zombie survival game. Try to survive as long as you can!',
+    img: LastWarImg,
+    vid: LastWarVid,
+    link: 'https://github.com/JvoProgramming/The-Last-War',
+    vidVolume: '.15',
   },
   {
     id: uuidv4(),
