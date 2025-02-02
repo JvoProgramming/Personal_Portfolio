@@ -84,9 +84,8 @@ export default function ContactForm() {
           <label htmlFor="email">
             Your email
             <input
-              type="text"
+              type="email"
               id="email"
-              email="email"
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -97,10 +96,8 @@ export default function ContactForm() {
           <label htmlFor="message">
             Your message
             <textarea
-              type="text"
-              id="message"
-              message="message"
               name="message"
+              id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
