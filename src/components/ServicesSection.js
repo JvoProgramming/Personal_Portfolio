@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdDesktopMac, MdCode } from 'react-icons/md';
+import { MdDesktopMac, MdCode, MdBuild } from 'react-icons/md';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
@@ -28,19 +28,24 @@ export default function ServicesSection() {
     <ServicesItemsStyles>
       <div className="container">
         <SectionTitle
-          subheading="meeting a client's needs"
+          subheading="End-to-End Software Solutions"
           heading="Services"
         />
         <div className="services__allItems">
           <ServicesSectionItem
-            icon={<MdDesktopMac />}
-            title="Web Developer"
-            desc="Developing websites is another skill I possess. I can design unique UI/UX for a beautiful and responsive front-end experience. I can also build a back-end to handle server-side scripting and functionalities."
+            icon={<MdCode />}
+            title="Full Stack Development"
+            desc="I design and develop scalable, high-performance applications, seamlessly integrating front-end and back-end technologies. From crafting intuitive user interfaces to building robust APIs and databases, I ensure efficient and maintainable solutions."
           />
           <ServicesSectionItem
-            icon={<MdCode />}
-            title="Software Developer"
-            desc="I also design and develop software to meet client's needs. I can design the requirements that must be done and tie together the entire functionality the system/application"
+            icon={<MdDesktopMac />}
+            title="Web Application Development"
+            desc="I create modern, responsive, and dynamic web applications tailored to user needs. My expertise spans UI/UX design, front-end frameworks, and back-end development to deliver seamless digital experiences."
+          />
+          <ServicesSectionItem
+            icon={<MdBuild />}
+            title="Software Architecture & Optimization"
+            desc="Beyond development, I focus on designing scalable system architectures, optimizing performance, and ensuring best practices in security, deployment, and maintainability."
           />
         </div>
       </div>

@@ -83,30 +83,29 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Johnny Vo</span>
               </p>
-              <h2 className="about__heading">An Aspiring Web Developer</h2>
+              <h2 className="about__heading">Software Engineer</h2>
               <div className="about__info">
                 <PText>
-                  I grew up in the Inland Empire, a metropolitan area and region
-                  in Southern California. I have been interacting with computers
-                  since I was four years old. I've always loved technology and
-                  kept a keen eye on the technological growth throughout my
-                  life. It is amazing to see how creative technology can be
-                  whilst being one of the most useful things the world utilizes.
+                  I grew up in the Inland Empire, a region in Southern
+                  California, and have been passionate about technology since
+                  childhood. From an early age, I was fascinated by how
+                  technology shapes the world and knew I wanted to be part of
+                  that innovation.
                   <br />
                   <br />
-                  My coding journey started when my highschool opened its first
-                  ever robotics course during my senior year. This was an
-                  opportunity for me to delve into the world of programming and
-                  computer science. Since then, I continued to look forward on
-                  my journey as a developer and earned my Bachelor of Science in
-                  Computer Science.
+                  My journey into programming began in high school when I took
+                  part in my school's first-ever robotics course. That
+                  experience sparked my interest in software development,
+                  leading me to pursue a Bachelor of Science in Computer
+                  Science.
                   <br />
                   <br />
-                  My vision is to develop innovative technologies that can drive
-                  the world to another level. As technology is progressing
-                  better than ever, it is time for us to create useful, helpful,
-                  and ethical products that the world can use. Let's strive
-                  together to make this happen!
+                  Now working as a Software Engineer @ KLaunch, I am dedicated
+                  to building impactful and efficient solutions. I believe in
+                  leveraging technology to solve real-world problems and create
+                  meaningful advancements. As innovation accelerates, my goal is
+                  to contribute to ethical and forward-thinking solutions that
+                  make a difference.
                 </PText>
               </div>
               <ButtonA btnText="My Resume" btnLink={Resume} />
@@ -128,15 +127,24 @@ export default function About() {
               <h1 className="about__info__heading">Skills</h1>
               <AboutInfoItem
                 title="Languages"
-                items={['C++', 'Python', 'Java']}
+                items={[
+                  'Java',
+                  'Python',
+                  'C++',
+                  'JavaScript',
+                  'TypeScript',
+                  'SQL',
+                  'HTML5',
+                  'CSS3',
+                ]}
               />
               <AboutInfoItem
-                title="Front-End"
-                items={['HTML', 'CSS', 'JavaScript', 'React']}
+                title="Frameworks & Libraries"
+                items={['React.js', 'Redux.js', 'AngularJS']}
               />
               <AboutInfoItem
-                title="Back-End"
-                items={['NodeJS', 'ExpressJS', 'MongoDB', 'SQL']}
+                title="Developer Tools"
+                items={['Git', 'GitHub', 'AWS', 'Jira']}
               />
             </div>
           </div>

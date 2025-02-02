@@ -6,17 +6,15 @@ const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
-  /* gap: 5rem; */
   margin-top: 3rem;
   .title {
     font-size: 2.4rem;
+    margin-right: 2rem;
   }
   .items {
     display: flex;
     gap: 1.5rem;
-    position: absolute;
-    left: 18rem;
+    flex-wrap: wrap;
   }
   .item {
     background-color: var(--deep-dark);
@@ -27,12 +25,12 @@ const AboutItemStyles = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    .items {
-      position: initial;
-      gap: 1rem;
-    }
     .title {
       font-size: 2rem;
+      margin-right: 0;
+    }
+    .items {
+      gap: 1rem;
     }
   }
 `;
