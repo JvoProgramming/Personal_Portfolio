@@ -28,15 +28,7 @@
 		"build": "CI= react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"prettier": "prettier --write"
-	},
-	"eslintConfig": {
-		"extends": [
-			"wesbos"
-		],
-		"rules": {
-			"react/prop-types": 0
-		}
+		"build:netlify": "DISABLE_ESLINT_PLUGIN=true CI= react-scripts build"
 	},
 	"browserslist": {
 		"production": [
